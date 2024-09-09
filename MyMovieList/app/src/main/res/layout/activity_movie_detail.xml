@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_cover_photo"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:src="@drawable/cover_photo"
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/vignette"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/action_share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cl2">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Movie Title" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:isIndicator="true"
+                android:rating="3.5"
+                android:stepSize="0.1"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/yellow"
+                android:secondaryProgressTint="@color/yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_cover_photo">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Year" />
+
+            <TextView
+                android:id="@+id/bullet1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/bullet"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_year"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/bullet1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Runtime" />
+
+            <TextView
+                android:id="@+id/bullet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/bullet"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_runtime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/bullet2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Certificate" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/tv_votes"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Rating" />
+
+            <TextView
+                android:id="@+id/tv_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Votes" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_cover_photo">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/poster_placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_overview_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/iv_poster"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/overview" />
+
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textAlignment="viewStart"
+                android:justificationMode="inter_word"
+                app:layout_constraintStart_toEndOf="@id/iv_poster"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_overview_heading"
+                app:layout_constraintBottom_toBottomOf="@id/iv_poster"
+                tools:text="Storyline" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl3">
+
+            <TextView
+                android:id="@+id/tv_cast_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/top_cast" />
+            
+            <HorizontalScrollView
+                android:id="@+id/hsv_cast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_cast_heading">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_cast"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_cast_heading">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_cast1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_cast_photo1"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:src="@drawable/cast_placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_name1"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/iv_cast_photo1"
+                                tools:text="Cast Name" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_role1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:maxLines="1"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_cast_name1"
+                                tools:text="Character" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_cast2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toEndOf="@id/cv_cast1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_cast_photo2"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:src="@drawable/cast_placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_name2"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/iv_cast_photo2"
+                                tools:text="Cast Name" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_role2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:maxLines="1"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_cast_name2"
+                                tools:text="Character" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_cast3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toEndOf="@id/cv_cast2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_cast_photo3"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:src="@drawable/cast_placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_name3"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/iv_cast_photo3"
+                                tools:text="Cast Name" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_role3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:maxLines="1"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_cast_name3"
+                                tools:text="Character" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_cast4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toEndOf="@id/cv_cast3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_cast_photo4"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:src="@drawable/cast_placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_name4"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/iv_cast_photo4"
+                                tools:text="Cast Name" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_role4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:maxLines="1"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_cast_name4"
+                                tools:text="Character" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_cast5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toEndOf="@id/cv_cast4"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_cast_photo5"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:src="@drawable/cast_placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_name5"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/iv_cast_photo5"
+                                tools:text="Cast Name" />
+
+                            <TextView
+                                android:id="@+id/tv_cast_role5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:maxLines="1"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_cast_name5"
+                                tools:text="Character" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

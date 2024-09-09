@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">MyMovieList</string>
+    <string name="about">About</string>
+    <string name="name">Muhammad Surya Adhi Setiawan</string>
+    <string name="email">surya.adhi.dede@gmail.com</string>
+    <string name="bullet">•</string>
+    <string name="storyline">Storyline</string>
+    <string name="top_cast">Top Cast</string>
+    <string name="overview">Overview</string>
+
+    <string-array name="data_poster">
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/A5KIsFWQMlvUqobZb2FInzOPlIp.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/lUOwyPbDD9Agl3pHQVHGbZE0TvI.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/xTWgncjZOrMmSjaEwA3DLOxaqf0.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/bGn7dGysvut3RzbwcTupisAYElN.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/hHaYrp6kGhe9akB9AVAkMY43mvH.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/pJA0ncjV9J9mSokynAQP9O9m2lV.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/nvCFJIj4cJXZeOwGU0sns0g03K1.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/7MKee9y8PypzK9MtG7oMogZ5WOX.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/mSkrNJ6xjA8rcrR0hGEJzDl8C5V.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/63InZxeGgfNQCoWkImR14fB99AY.jpg</item>
+    </string-array>
+
+    <string-array name="data_title">
+        <item>The Raid</item>
+        <item>Agak Laen</item>
+        <item>Pengabdi Setan</item>
+        <item>Gadis Kretek</item>
+        <item>Budi Pekerti</item>
+        <item>Ngeri-Ngeri Sedap</item>
+        <item>Jatuh Cinta Seperti di Film-Film</item>
+        <item>Miracle in Cell No. 7</item>
+        <item>Dua Garis Biru</item>
+        <item>KKN di Desa Penari</item>
+    </string-array>
+
+    <string-array name="data_year">
+        <item>2011</item>
+        <item>2024</item>
+        <item>2017</item>
+        <item>2023</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2019</item>
+        <item>2022</item>
+    </string-array>
+
+    <string-array name="data_runtime">
+        <item>1h 41m</item>
+        <item>1h 59m</item>
+        <item>1h 47m</item>
+        <item>1h</item>
+        <item>1h 50m</item>
+        <item>1h 54m</item>
+        <item>1h 58m</item>
+        <item>2h 25m</item>
+        <item>1h 53m</item>
+        <item>2h 10m</item>
+    </string-array>
+
+    <string-array name="data_certificate">
+        <item>D</item>
+        <item>13+</item>
+        <item>17+</item>
+        <item>13+</item>
+        <item>13+</item>
+        <item>13+</item>
+        <item>13+</item>
+        <item>SU</item>
+        <item>13+</item>
+        <item>17+</item>
+    </string-array>
+
+    <string-array name="data_rating">
+        <item>7.6</item>
+        <item>8.1</item>
+        <item>6.5</item>
+        <item>8.2</item>
+        <item>8.2</item>
+        <item>8.0</item>
+        <item>8.7</item>
+        <item>7.7</item>
+        <item>7.8</item>
+        <item>5.9</item>
+    </string-array>
+
+    <string-array name="data_votes">
+        <item>216K</item>
+        <item>948</item>
+        <item>11K</item>
+        <item>1.9K</item>
+        <item>517</item>
+        <item>2K</item>
+        <item>640</item>
+        <item>840</item>
+        <item>1.6K</item>
+        <item>2.3K</item>
+    </string-array>
+
+    <string-array name="data_overview">
+        <item>A S.W.A.T. team becomes trapped in a tenement run by a ruthless mobster and his army of killers and thugs.</item>
+        <item>An old man dies in a failing haunted house ride. The operators bury his body on site, turning it into a popular attraction.</item>
+        <item>After dying from a strange illness that she suffered for 3 years, a mother returns home to pick up her children.</item>
+        <item>Amid the evocative blend of flavorful spices to create the perfect kretek cigarette, two souls embark on an epic romance set in 1960s Indonesia.</item>
+        <item>After a viral altercation, Prani, a guidance counselor, faces backlash endangering her career and family.</item>
+        <item>A married couple stages their divorce in order to encourage their estranged adult children to return to their hometown.</item>
+        <item>Bagus, a screenwriter, reunites with his high school friend and crush, Hana, who is still grieving from the loss of her husband. He wants to convince her to fall in love once again, just like in the movies.</item>
+        <item>A mentally ill man faces the consequences of a corrupt Indonesian politician as he is wrongly accused of murder, and all he wishes is to see his daughter again.</item>
+        <item>A young couple violated the boundary without knowing the consequences. They try to take responsibility for their choices and their innocence is tested when the families who really loved them knew, then forced into their chosen journey.</item>
+        <item>Six students who had to carry out KKN in a remote village are warned not to cross the boundary of the forbidden gate that leading to the mysterious place that may related to the figure of a beautiful dancer who began to disturb them.</item>
+    </string-array>
+
+    <string-array name="data_cast_photo1">
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/9WngJ2lOCy3UczLv3L2JRZvX0UM.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/suo3hQ0RhWDKvuQPq8tmrzrcmv0.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/d9asO9KVxwNoT1Fhhvuo7GKimBJ.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/vEA2q6kxmhsMjljBjNtD0aFsMK6.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/2A1M0HAtL8xDDk1tqlpfmuLKsGv.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/3sYzDXxRuLkK4HVSyVkRLTYQwZX.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/ang7P61qO4ZajzXXJVrCefM3dm2.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/c3QxAW2JOjX7plgQPAFbgYogvAH.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/1M3cLNTQLL1Vy6UbO9Er7FMqbND.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/lCVPm2NSK8mIjGE0pCVLE87oGLj.jpg</item>
+    </string-array>
+
+    <string-array name="data_cast_name1">
+        <item>Iko Uwais</item>
+        <item>Boris Bokir</item>
+        <item>Tara Basro</item>
+        <item>Dian Sastrowardoyo</item>
+        <item>Sha Ine Febriyanti</item>
+        <item>Arswendi Nasution</item>
+        <item>Ringgo Agus Rahman</item>
+        <item>Vino G. Bastian</item>
+        <item>Angga Yunanda</item>
+        <item>Tissa Biani Azzahra</item>
+    </string-array>
+
+    <string-array name="data_cast_role1">
+        <item>Rama</item>
+        <item>Boris</item>
+        <item>Rini Suwono</item>
+        <item>Dasiyah</item>
+        <item>Prani</item>
+        <item>Pak Domu</item>
+        <item>Bagus</item>
+        <item>Dodo Rozak</item>
+        <item>Bima</item>
+        <item>Nur</item>
+    </string-array>
+
+    <string-array name="data_cast_photo2">
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/lv85qMVXtofw7VsM7tKR36V0jAy.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/7jRuZsXENvsh8nXPPw0F7bpVRTF.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/v9yWVWqD5SeDuU8l8rb71BYmlvI.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/7O8EMwVCLpR8mhmavPaOaKvXtoK.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/1M3cLNTQLL1Vy6UbO9Er7FMqbND.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/afZOBUf2UAjrvpA0DgWCGwkVDy0.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/eyvYKplctTTZHJkDhkzAL3u8iVt.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/e63JIifeTq5KpUa8FTcOVAofX7j.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/MP9WF1y4jvva6OsZZQJBGjdMhd.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/vXti4BqFVvon3auaVkNj6dI20x.jpg</item>
+    </string-array>
+
+    <string-array name="data_cast_name2">
+        <item>Joe Taslim</item>
+        <item>Indra Jegel</item>
+        <item>Endy Arfian</item>
+        <item>Ario Bayu</item>
+        <item>Angga Yunanda</item>
+        <item>Tika Panggabean</item>
+        <item>Nirina Zubir</item>
+        <item>Mawar Eva de Jongh</item>
+        <item>Adhisty Zara</item>
+        <item>Adinda Thomas</item>
+    </string-array>
+
+    <string-array name="data_cast_role2">
+        <item>Jaka</item>
+        <item>Jegel</item>
+        <item>Toni</item>
+        <item>Soeraja</item>
+        <item>Muklas</item>
+        <item>Mak Domu</item>
+        <item>Hana</item>
+        <item>Kartika</item>
+        <item>Dara</item>
+        <item>Widya</item>
+    </string-array>
+
+    <string-array name="data_cast_photo3">
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/gdUidZ0pNdk1WERTDKOGn9UWXPT.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/vnocfgBJCAUFViiiGOV2VObU6rZ.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/rpn7UUV3UYVih0jmans15MRA5ki.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/GD07YokIbXipJrEQtBEQZCkVnn.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/16Z4YA95SjXXxLLJEHHj9H58ESt.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/suo3hQ0RhWDKvuQPq8tmrzrcmv0.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/bnCnmSsqW6nKz4LhoEKknQMJ52H.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/54LwiUhsGogWfIGINeLr4eGjSPk.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/cdu86oDgzl5imdDruAZHferpPvw.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/eEVADU4koVDxS7gOtJ0Xj2b6oj.jpg</item>
+    </string-array>
+
+    <string-array name="data_cast_name3">
+        <item>Ray Sahetapy</item>
+        <item>Bene Dion Rajagukguk</item>
+        <item>Nasar Anuz</item>
+        <item>Arya Saloka</item>
+        <item>Prilly Latuconsina</item>
+        <item>Boris Bokir</item>
+        <item>Sheila Dara Aisha</item>
+        <item>Indro</item>
+        <item>Cut Mini Theo</item>
+        <item>Achmad Megantara</item>
+    </string-array>
+
+    <string-array name="data_cast_role3">
+        <item>Tama</item>
+        <item>Bene</item>
+        <item>Bondi</item>
+        <item>Lebas</item>
+        <item>Tita</item>
+        <item>Domu</item>
+        <item>Cheline</item>
+        <item>Japra Effendi</item>
+        <item>Yuni</item>
+        <item>Bima</item>
+    </string-array>
+
+    <string-array name="data_cast_photo4">
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/k4UvBLu3KekD1tws0gLbzzkqREw.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/q5PUYJnN572SH8KnfU3zyyTXngp.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/yXSGQIdGvnTPmYjhcrEFHkvIAO2.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/2NXQ4fOQDWn53HAbGTJcvHRZ4li.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/3l5aJxHeDI2wMajtZJEzLXRFPES.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/oH2Lp3WgwmdLDQNySUUhxEW46gZ.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/imnfhNrPN8etW6PzGxwpbSYyt3w.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/iDiIkJd3ZJh0NN8IahI6QeZ4NRB.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/3sYzDXxRuLkK4HVSyVkRLTYQwZX.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/5pFyssmQGxxCu5geM4WgCBJGrcU.jpg</item>
+    </string-array>
+
+    <string-array name="data_cast_name4">
+        <item>Yayan Ruhian</item>
+        <item>Oki Rengga</item>
+        <item>M. Adhiyat</item>
+        <item>Putri Marino</item>
+        <item>Dwi Sasono</item>
+        <item>Gita Bhebhita</item>
+        <item>Julie Estelle</item>
+        <item>Tora Sudiro</item>
+        <item>Arswendi Nasution</item>
+        <item>Aghniny Haque</item>
+    </string-array>
+
+    <string-array name="data_cast_role4">
+        <item>Mad Dog</item>
+        <item>Oki</item>
+        <item>Ian</item>
+        <item>Arum</item>
+        <item>Didit</item>
+        <item>Sarma</item>
+        <item>Julie</item>
+        <item>Zaki</item>
+        <item>Rudy</item>
+        <item>Ayu</item>
+    </string-array>
+
+    <string-array name="data_cast_photo5">
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/zfv0xvwhealzqRwI0BUQpbzrUuD.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/95EEQV0ULK1ezqcWfPo72Qo0dVL.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/v4VSF6IPQX1nYfg643POwKKKz4e.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/38nwDxFZIpMoUaszFqp5waX9Z35.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/q9OBxNLwRc9iWm1pfiHtgvBWtyx.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/eBa6dTeBDCXrLrEVrrmSTmXrskV.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/uY4sA189EoVvanm1hmM0gUriDeV.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/nkWtfqNbeaXwGFncdvZhLalo1fK.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/n0QgBLfofIIvuzEwnEHsWnIH7VL.jpg</item>
+        <item>https://media.themoviedb.org/t/p/w300_and_h300_face/whKsZJ30atKJBKfnr5pvkFjOJhw.jpg</item>
+    </string-array>
+
+    <string-array name="data_cast_name5">
+        <item>Donny Alamsyah</item>
+        <item>Arie Kriting</item>
+        <item>Bront Palarae</item>
+        <item>Ibnu Jamil</item>
+        <item>Omara Esteghal</item>
+        <item>Lolox</item>
+        <item>Alex Abbad</item>
+        <item>Rigen Rakelna</item>
+        <item>Lulu Tobing</item>
+        <item>Calvin Jeremy</item>
+    </string-array>
+
+    <string-array name="data_cast_role5">
+        <item>Andi</item>
+        <item>Jongki</item>
+        <item>Suwono</item>
+        <item>Seno</item>
+        <item>Gora</item>
+        <item>Gabe</item>
+        <item>Yoram</item>
+        <item>Yunus</item>
+        <item>Rika</item>
+        <item>Anton</item>
+    </string-array>
+
+</resources>
